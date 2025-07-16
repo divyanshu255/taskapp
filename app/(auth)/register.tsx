@@ -1,79 +1,3 @@
-// import React from 'react';
-// import { StyleSheet, View,Text, TextInput ,Alert,TouchableOpacity} from 'react-native';
-// import {useForm,Controller} from "react-hook-form";
-// import { createUserWithEmailAndPassword } from "firebase/auth";
-// import { auth } from "../../firebase/config.js";
-// import { useRouter } from "expo-router";
-
-// const Login = () => {
-//     const { control, handleSubmit } = useForm();
-//   const router = useRouter();
-//  const onSubmit = async (data: any) => {
-//     try {
-//       await createUserWithEmailAndPassword(auth, data.email, data.password);
-//       router.replace("../(tabs)");
-//     } catch (error: any) {
-//         console.log(error.message);
-        
-//       Alert.alert("Registration Failed", error.message);
-//     }
-//   };
-
-
-
-//     return (
-//         <View style={styles.container}>
-//             <Text style={styles.title}> Login Screen </Text>
-//           <Controller
-//           name='email'
-//           control={control}
-//           rules={{required:true}}
-//           render={({field:{onChange,value}})=>(
-//             <TextInput placeholder='Email Address'
-//             style={styles.input}
-//             value={value}
-//             onChangeText={onChange}/>
-//           )
-
-
-
-//           }
-          
-          
-          
-//           >
-
-//           </Controller>
-//           <Controller
-//         name="password"
-//         control={control}
-//         rules={{ required: true }}
-//         render={({ field: { onChange, value } }) => (
-//           <TextInput placeholder="Password" style={styles.input} secureTextEntry value={value} onChangeText={onChange} />
-//         )}
-//       />
-//       <TouchableOpacity style={styles.button} onPress={handleSubmit(onSubmit)}>
-//         <Text style={styles.buttonText}>Sign Up</Text>
-//       </TouchableOpacity>
-
-//       <Text style={{ marginTop: 20 }}>
-//         Already have an account? <Text style={{ color: "#5C6EF8" }} onPress={() => router.push("./login1")}>Log in</Text>
-//       </Text>
-
-//         </View>
-//     );
-// }
-
-// const styles = StyleSheet.create({
-//     container: { flex: 1, justifyContent: "center", padding: 20 },
-//   title: { fontSize: 22, fontWeight: "bold", marginBottom: 30 },
-//   input: { backgroundColor: "#F1F1F1", padding: 12, marginBottom: 15, borderRadius: 8 },
-//   button: { backgroundColor: "#5C6EF8", padding: 15, borderRadius: 8 },
-//   buttonText: { color: "#fff", textAlign: "center", fontSize: 16 },
-// })
-
-// export default Login;
-
 
 
 import React from 'react';
@@ -84,14 +8,6 @@ import { auth } from "../../firebase/config.js";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 
-/**
- * Improved UI inspired by image2:
- * - Large logo with pastel circle
- * - Card layout for form with soft shadow and rounded corners
- * - Bigger, more rounded input fields and button
- * - Social login icons row (UI only)
- * - Clean hierarchy, centered text and prompts
- */
 
 const RegisterScreen = () => {
   const { control, handleSubmit } = useForm();
