@@ -1,59 +1,11 @@
-// import React from 'react';
-// import { Link } from 'expo-router';
-// import { StyleSheet, View ,Image,Text,TouchableOpacity} from 'react-native';
 
-// const Welcome = () => {
-//     return (
-//         <View style={styles.container}>
-//             <Image source={require('../../assets/images/01.jpeg')} style={styles.logo}/>
-//              <Text style={styles.title}>Get things done.</Text>
-//       <Text style={styles.subtitle}>Just a click away from planning your tasks.</Text>
-//       <TouchableOpacity style={styles.button}>
-//         <Link href="/(auth)/login1" style={styles.buttonText}>
-//         <Text >Getting started</Text>
-//           →
-//         </Link>
-//       </TouchableOpacity>
-//         </View>
-//     );
-
-// }
-
-// const styles = StyleSheet.create({
-//     container:{
-//         flex:1,
-//         justifyContent:'center',
-//         alignItems:'center',
-//         padding:20,
-//     },
-//     logo: { width: 320, height: 320, marginBottom: 30 },
-//     title: { fontSize: 44, fontWeight: "bold" },
-//   subtitle: { fontSize: 26, textAlign: "center", marginBottom: 40 },
-//   button: {
-//     backgroundColor: "#5C6EF8",
-//     borderRadius: 50,
-//     padding: 30,
-//   },
-//   buttonText: {
-//     color: "#fff",
-//     fontSize: 24,
-//   },
-// })
-
-// export default Welcome;
 
 import React from 'react';
 import { Link } from 'expo-router';
 import { StyleSheet, View, Image, Text, TouchableOpacity } from 'react-native';
 import { Ionicons } from "@expo/vector-icons";
 
-/**
- * Improved onboarding UI inspired by image2:
- * - Big checkmark logo with pastel circle
- * - Large, bold title and subtitle
- * - Rounded "Getting started" button with icon
- * - Colors, spacing, hierarchy match sample design
- */
+
 
 const WelcomeScreen = () => {
   return (
