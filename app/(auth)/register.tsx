@@ -33,7 +33,6 @@ const RegisterScreen = () => {
         
       </View>
 
-      {/* Registration Form Card */}
       <View style={styles.card}>
         <Controller
           name="email"
@@ -73,7 +72,6 @@ const RegisterScreen = () => {
         
       </View>
 
-      {/* Login prompt */}
       <Text style={styles.footer}>
         Already have an account?{" "}
         <Text style={styles.link} onPress={() => router.push("./login1")}>
