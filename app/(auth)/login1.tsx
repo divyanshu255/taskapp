@@ -32,7 +32,6 @@ export default function LoginScreen() {
       
       </View>
 
-      {/* Login Form Card */}
       <View style={styles.card}>
         <Controller
           name="email"
@@ -69,11 +68,10 @@ export default function LoginScreen() {
           <Text style={styles.buttonText}>Log in</Text>
         </TouchableOpacity>
 
-        {/* Social logins */}
+      
         
       </View>
 
-      {/* Register prompt */}
       <Text style={styles.footer}>
         Don’t have an account?{" "}
         <Text style={styles.link} onPress={() => router.push("/(auth)/register")}>
@@ -152,8 +150,8 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: "#666",
     textAlign: "center",
-    paddingHorizontal: 10, // ensures enough space for wrapping
-    alignSelf: "center",   // centers the text block itself
+    paddingHorizontal: 10, 
+    alignSelf: "center",   
   },
   link: {
     color: "#5C6EF8",
